@@ -1,0 +1,3 @@
+rootProject.name='DBMS-Performance-Benchmark'
+include ':app'
+include ':DBMS-benchmark'
