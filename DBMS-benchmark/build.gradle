@@ -31,9 +31,10 @@ android {
         testInstrumentationRunnerArguments clearPackageData: 'true'
     }
 
-    testOptions {
-        execution 'ANDROIDX_TEST_ORCHESTRATOR'
-    }
+    // Uncomment for running with Android TestOrchestrator directly from Android Studio.
+    // testOptions {
+    //    execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    // }
 
     buildTypes {
         debug {
