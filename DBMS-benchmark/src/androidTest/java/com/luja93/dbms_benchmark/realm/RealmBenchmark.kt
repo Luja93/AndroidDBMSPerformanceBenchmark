@@ -15,13 +15,16 @@ import org.junit.runner.RunWith
 
 /**
  * \brief Benchmark which will execute on an Android device.
- * \details The body of [BenchmarkRule.measureRepeated] is measured in a loop, and Android Studio
- * will output the result. Modify the code to see how it affects performance.
+ * \details The body of [BenchmarkRule.measureRepeated] is measured in a loop,
+ * and Android Studio will output the result. Modify the code to see how it
+ * affects performance.
+ *
+ * Since at the moment of writing this code, Android Studio (3.6.3) did not work
+ * well for me while running the performance tests, I would recommend using the adb shell.
  *
  * Build/run the class (module) before you run the tests via adb shell, otherwise the
- * instrumentation will fail. Since at the moment of writing this code, Android Studio (3.6.3) does
- * not work well with running the tests managed by the JetPack Benchmark Library, use the following
- * adb commands to successfully run the tests and get the detailed test reports output on the device.
+ * instrumentation will fail. Use the following adb commands to successfully run the tests
+ * and get the detailed test report on the device.
  *
  * For regular run, use:
  *

@@ -38,7 +38,7 @@ abstract class BaseHelpers<City, Database> {
      *  returns the entire list of cities acquired with [loadCities].
      */
     fun getCities(take: Int = 0): List<City> {
-        return if (take == 0)
+        return if (take < 1)
             cities
         else
             cities.take(take)
